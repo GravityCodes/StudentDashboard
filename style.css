@@ -1,0 +1,97 @@
+/* CSS RESET */
+
+/*  
+*  Disables standard content-box sizing.
+*
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+/*  
+*  Removes all default margin sets the line height to meet WCAG criteria.
+*
+*/
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+
+/*
+* Removes default inline display for media and fits media to its container.
+*
+*/
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+* Form controls will use parent's font.
+*
+*/
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+* Allows paragraphs to break words and add hyphens were necessary.
+*
+*/
+
+p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* CSS RESET END */
+
+@font-face {
+    font-family: 'rubiklight_italic';
+    src: url('./fonts/rubik-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./fonts/rubik-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubiklight';
+    src: url('./fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./fonts/rubik-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --main-color: #0284c7;
+    --secondary-color: #38bdf8;
+}
+
+body {
+    font-family: rubiklight;
+}
+
+#page-container {
+    height: 100vh;
+    display: flex;
+    padding: 1%;
+}
+
+#main-sidebar {
+    height: 95vh;
+    width: 10vw;
+    background-color:var(--secondary-color);
+    align-self: center;
+    border-radius: 15px;
+}
