@@ -76,22 +76,76 @@ p {
 :root {
     --main-color: #0284c7;
     --secondary-color: #38bdf8;
+    --primary-text-color: white;
 }
 
 body {
     font-family: rubiklight;
+    color: var(--primary-text-color);
 }
 
 #page-container {
     height: 100vh;
-    display: flex;
+    display: grid;
     padding: 1%;
+
+    grid-template-columns: minmax(118px, 200px) 2fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    gap: 20px;
 }
 
-#main-sidebar {
-    height: 95vh;
-    width: 10vw;
+#main-sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color:var(--secondary-color);
-    align-self: center;
-    border-radius: 15px;
+    grid-row: 1 / 3;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+#sidebar-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#sidebar-logo svg {
+    height: 70px;
+    width: 70px;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+#header-wrapper {
+
+    background-color: var(--main-color);
+    grid-column: 2 / 4;
+}
+
+#main-content-section-wrapper {
+ 
+    background-color: #159852;
+    
+}
+
+#right-sidebars-wrapper {
+    background-color: aqua;
 }
