@@ -18,7 +18,7 @@
                     </svg>
                     <h1>Student Dashboard</h1>
                 </div>
-                <nav>
+                <nav id="sidebar-nav">
                     <ul>
                         <li>Home</li>
                         <li>Messages</li>
@@ -35,10 +35,32 @@
         
         
         <div id="header-wrapper">
-            <div id="User-controls">
+            <div id="user-wrapper">
+                <nav id="user-nav">
+                    <ul>
+                        <li><button type="button">Profile</button></li>
+                        <li><button type="button">Settings</button></li>
+                        <li><button type="button">Support</button></li>
+                    </ul>
+                </nav>
+                <div id="user-controls">
+                    <input type="search" name="user_search" id="user_search">
+                    <h2>Welcome back, <span>Johan</span></h2>
+
+                    <div id="user-profile-img">
+                        <img src="./images/user-profile-pic.jpeg" alt="Profile Picture">
+                    </div>
+                </div>
             </div>
             
-            <div id="notifications">
+            <div id="notifications-wrapper">
+                <h2>notifications</h2>
+                <div id="notification-container">
+                    <div class="notification">This is a notification</div>
+                    <div class="notification">This is a notification</div>
+                    <div class="notification">This is a notification</div>
+                    <div class="notification">This is a notification</div>
+                </div>
             </div>
         </div>
         

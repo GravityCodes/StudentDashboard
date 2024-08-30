@@ -74,15 +74,25 @@ p {
 }
 
 :root {
+    /* UNITS */
+
+    --border-radius: 50px;
+
+
+    /* COLORS */
+
     --main-color: #0284c7;
     --secondary-color: #38bdf8;
     --primary-text-color: white;
+    --primary-accent-color:#a5f3fc;
 }
 
 body {
     font-family: rubiklight;
     color: var(--primary-text-color);
 }
+
+
 
 #page-container {
     height: 100vh;
@@ -120,24 +130,75 @@ h1 {
     width: 70px;
 }
 
-nav {
+#sidebar-nav {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-nav ul {
+#sidebar-nav ul,
+#user-nav ul {
     list-style-type: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0;
     margin: 0;
 }
 
 #header-wrapper {
-
-    background-color: var(--main-color);
     grid-column: 2 / 4;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+#user-wrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+#user-nav {
+    background-color: var(--primary-accent-color);
+    padding: 2rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+#user-nav button {
+    height: 2rem;
+    width: 8rem;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#user-controls {
+    background-color: var(--main-color);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+
+}
+
+#user-profile-img {
+    height: 50px;
+    width: 50px;
+
+    border: 1px solid var(--primary-text-color);
+    border-radius: 50px;
+}
+
+#user-profile-img img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+#notifications-wrapper {
+    background-color: var(--secondary-color);
 }
 
 #main-content-section-wrapper {
