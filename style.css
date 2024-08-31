@@ -17,6 +17,7 @@
 
 * {
     margin: 0;
+    padding: 0;
     line-height: calc(1em + 0.5rem);
 }
 
@@ -113,7 +114,7 @@ input[type="search"]::-ms-clear {
 body {
     font-family: rubiklight;
     color: var(--primary-text-color);
-    background-color: var(--primary-accent-color);
+    background-color: var(--primary-text-color);
 }
 
 
@@ -186,7 +187,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: var(--primary-accent-color)
+    color: rgba(185, 185, 185, 0.793)
 }
 
 ul:first-child li:first-child a {
@@ -235,7 +236,7 @@ a:hover {
     align-items: center;
 }
 
-#user-nav button {
+button {
     height: 2rem;
     width: 5rem;
     border-radius: 10px;
@@ -247,11 +248,10 @@ a:hover {
     transition: all 0.5s;
 }
 
-#user-nav button:hover {
+button:hover {
     background-color: var(--primary-text-color);
     color: var(--secondary-color);
-    height: 2.3rem;
-    width: 5.3rem;
+    transform: scale(1.1);
 
 }
 
@@ -440,10 +440,8 @@ input[type="search"] + span::after {
 }
 
 
-.class-box:hover,
-.todo-box:hover {
-    height: 170px;
-    width: 320px;
+.class-box:hover {
+    transform: scale(1.1);
 }
 
 .class-box {
@@ -466,8 +464,17 @@ input[type="search"] + span::after {
 .todo-box {
     height: 150px;
     width: 300px;
+    padding: 0.5rem;
     
 }
+
+.todo-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+}
+
 
 #right-sidebars-wrapper {
     height: 100%;
@@ -496,6 +503,7 @@ input[type="search"] + span::after {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+
 }
 
 .trending-hashtags ul li {
