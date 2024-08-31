@@ -424,16 +424,15 @@ input[type="search"] + span::after {
     display: grid;
     gap: 30px;
 
-    grid-template-columns:  repeat(auto-fit, 300px);
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
 
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
-.class-box,
-.todo-box {
+.class-box {
     height: 150px;
-    width: 300px;
+    width: 100%;
     background: linear-gradient(var(--main-color), var(--secondary-color));
     border-radius: var(--border-radius);
     cursor: pointer;
@@ -465,9 +464,11 @@ input[type="search"] + span::after {
 
 .todo-box {
     height: 150px;
-    width: 300px;
+    width: 100%;
     padding: 0.5rem;
-    
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
 }
 
 .todo-buttons {
