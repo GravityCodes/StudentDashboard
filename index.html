@@ -35,27 +35,32 @@
         
         
         <div id="header-wrapper">
-            <div id="user-wrapper">
+            <div id="user-profile-area-wrapper">
                 <nav id="user-nav">
-                    <ul>
-                        <li><button type="button">Profile</button></li>
-                        <li><button type="button">Settings</button></li>
-                        <li><button type="button">Support</button></li>
-                    </ul>
+                    <div id="buttons-wrapper">
+                        <button type="button">Profile</button>
+                        <button type="button">Settings</button>
+                        <button type="button">Support</button>
+                    </div>
                 </nav>
-                <div id="user-controls">
+                <div id="user-controls-profile">
                     <input type="search" name="user_search" id="user_search">
-                    <h2>Welcome back, <span>Johan</span></h2>
+                    <span></span>
+                    <h2>Welcome back, <span id="user-name">Johan</span></h2>
 
-                    <div id="user-profile-img">
+                    <div id="user-controls-profile-img">
                         <img src="./images/user-profile-pic.jpeg" alt="Profile Picture">
                     </div>
                 </div>
             </div>
             
             <div id="notifications-wrapper">
-                <h2>notifications</h2>
-                <div id="notification-container">
+                <h2>Notifications</h2>
+                <div id="notification-elements-wrapper" class="scroll">
+                    <div class="notification">This is a notification</div>
+                    <div class="notification">This is a notification</div>
+                    <div class="notification">This is a notification</div>
+                    <div class="notification">This is a notification</div>
                     <div class="notification">This is a notification</div>
                     <div class="notification">This is a notification</div>
                     <div class="notification">This is a notification</div>
