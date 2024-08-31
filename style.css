@@ -130,6 +130,7 @@ body {
 
 #main-sidebar-wrapper {
     display: flex;
+    height: 96vh;
     flex-direction: column;
     justify-content: space-between;
     background: linear-gradient(var(--main-color), var(--secondary-color));
@@ -148,6 +149,7 @@ h1 {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-bottom: 30px;
 }
 
 #sidebar-logo svg {
@@ -160,15 +162,35 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
-#sidebar-nav ul,
-#user-nav ul {
+#sidebar-nav ul{
     list-style-type: none;
     font-size: 1.2rem;
     padding: 0;
     margin: 0;
 }
+
+#sidebar-nav ul li {
+    margin-bottom: 5px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.546);
+}
+
+ul:first-child li:first-child a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
 
 #header-wrapper {
     grid-column: 2 / 4;
@@ -318,11 +340,6 @@ input[type="search"] + span::after {
     flex-shrink: 1;
 }
 
-#notifications-wrapper h2 {
-    font-size: 2rem;
-    color: var(--main-color);
-
-}
 
 #notification-elements-wrapper {
     display: block;
@@ -333,6 +350,20 @@ input[type="search"] + span::after {
     padding: 10px;
     box-shadow: var(--shadow);
     
+}
+
+#main-content-section-wrapper {
+ 
+
+    
+    
+}
+
+#right-sidebars-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color:var(--main-color);
+    box-shadow: var(--shadow);
 }
 
 .notification {
@@ -388,15 +419,22 @@ input[type="search"] + span::after {
     background-color: white;
 }
 
-#main-content-section-wrapper {
- 
-    background-color: var(--main-color);
-    box-shadow: var(--shadow);
-    
+.section-title {
+    font-size: 2rem;
+    color: var(--main-color);
 }
 
-#right-sidebars-wrapper {
-    background-color:var(--main-color);
-    box-shadow: var(--shadow);
+.main-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.class-box {
+    height: 150px;
+    width: 300px;
+    background: linear-gradient(var(--main-color), var(--secondary-color));
+    border-radius: var(--border-radius);
 }
 
