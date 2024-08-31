@@ -317,13 +317,9 @@ input[type="search"] + span::after {
 }
 
 #user-name {
-    display: block
-}
-
-#user-name {
+    display: block;
     font-size: 3rem;
 }
-
 #user-controls-profile-img {
     height: 150px;
     width: 150px;
@@ -481,8 +477,8 @@ input[type="search"] + span::after {
 
 #right-sidebars-wrapper {
     height: 100%;
-    width: 300px;
-    justify-self: end;
+    width: 100%;
+    justify-self: center;
     grid-column-start: 3;
 }
 
