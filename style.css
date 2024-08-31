@@ -489,5 +489,22 @@ input[type="search"] + span::after {
     border-bottom: 1px solid var(--primary-accent-color);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+}
 
+.trending-hashtags ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.trending-hashtags ul li {
+    border-radius: var(--border-radius);
+    padding: 2px 6px;
+    background-color: var(--dark-color);
+    cursor: pointer;
+}
+
+.trending-hashtags ul li:hover {
+    border: 1px solid var(--primary-text-color);
 }
